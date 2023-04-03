@@ -1,0 +1,10 @@
+lista = [] # desta maneira gera varias tuplas dentro da lista 
+for x in range(3): 
+    for y in range(3): 
+        lista.append((x, y)) 
+
+lista = [  # apenas uma tupla dentro da lista
+    (x, y) 
+    for x in range(3) 
+    for y in range(3) 
+]

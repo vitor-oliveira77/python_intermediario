@@ -1,0 +1,19 @@
+
+pessoa = {} 
+
+chave = 'nome' 
+
+pessoa[chave] = 'Vitor Augusto' # adiciona ao dicionario
+pessoa['sobrenome'] = 'Oliveira' 
+
+print(pessoa[chave]) 
+
+pessoa[chave] = 'Maria'  
+
+del pessoa ['sobrenome'] #deleta no dicionario 
+print(pessoa) 
+
+if pessoa.get('sobrenome') is None: # funciona como o try except, o get tenta executar, caso n consiga, executa o else.
+    print('Não Existe') 
+else: 
+    print(pessoa['sobrenome'])

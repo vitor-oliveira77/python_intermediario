@@ -1,0 +1,11 @@
+# print é diferente de return, pois print só exibi algo na tela ( não tem valor é um none) 
+#utilizamos return para obter um valor de retorno e utilizar em algum calculo
+# somente um return por função
+
+def soma(x, y): 
+    return x + y # tudo que estiver depois de return no escopo da funçao, não será executado.
+
+soma1 = soma(2,3) 
+soma2 = soma(3,3) 
+print(soma1 + soma2) 
+

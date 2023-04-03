@@ -1,0 +1,20 @@
+# try e except é usado para tratar erros 
+
+try: 
+    a = 18 
+    b = 0 
+    print('Linha 1' [1000]) 
+    c = a / b 
+    print('Linha 2') 
+except ZeroDivisionError:  # é possivel tratar erros especificos colocando o nome deles assim
+    print('Dividiu por zero.') 
+except NameError: 
+    print('Nome B não está definido') 
+except (TypeError, IndexError) as error:  # é possivel tratar dois erros desta forma
+    print('TyperError + IndexError') 
+    print('MSG:', error) 
+    print('Nome:', error.__class__.__name__) # nome + classes do error (.___class__)
+except Exception:  # exception é usado para tratar todos os erros restantes
+    print('ERRO Desconhecido') 
+
+print('Continua') 

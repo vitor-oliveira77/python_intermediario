@@ -1,0 +1,9 @@
+
+def saudacao(nome='Sem nome'): 
+    print(f'olá, {nome} !') 
+
+
+saudacao('Luiz Otávio') 
+saudacao('Maria') 
+saudacao('Helena')
+saudacao()

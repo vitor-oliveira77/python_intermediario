@@ -1,0 +1,7 @@
+# Se nomear um argumento tem que nomear os outros
+def soma (x,y,z): #parametro
+    print (f'{x=} y{y} {z=}', 'x + y + z =', x + y + z) 
+
+soma(1,2,3) #argumento
+soma(1,y=2,z=5) 
+

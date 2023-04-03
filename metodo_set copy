@@ -1,0 +1,6 @@
+# ITERATOR 
+
+# ITERATOR : Semore exibe o proximo valor, não sendo possivel obter indice nem outras coisas, só o proximo valor 
+iterator = ['Eu', 'Tenho'] 
+
+print(next(iterator)) # exibe o proximo da lista

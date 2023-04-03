@@ -1,0 +1,7 @@
+import test_aula 
+from test_aula import soma, variavel_modulo
+print('Este modulo se chama', __name__) 
+print(test_aula.variavel_modulo) 
+print(variavel_modulo) 
+print(soma(2,3)) 
+print(test_aula.soma(2,3))

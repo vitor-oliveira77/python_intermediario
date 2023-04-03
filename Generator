@@ -1,0 +1,30 @@
+# generator: forma mais otimizada de lista, pausa a cada execução te entrega o valor sem pesar na memoria. 
+# list : pesa mais na memoria mas tem o mesmo resultado. 
+
+import sys
+
+# Generator expression, Iterables e Iterators em Python
+iterable = ['Eu', 'Tenho', '__iter__']
+iterator = iter(iterable)  # tem __iter__ e __next__
+lista = [n for n in range(1000000)]
+generator = (n for n in range(1000000))
+
+print(sys.getsizeof(lista))
+print(sys.getsizeof(generator))
+
+print(generator)
+
+# for n in generator:
+#     print(n) 
+
+def generator1(n=0,maximum=10): 
+    while True: 
+        yield n # yield é usado para pausar
+        n += 1
+
+        if n >= maximum: 
+            return
+
+gen = generator(maximum = 10000) 
+for n in gen:
+    print(n)

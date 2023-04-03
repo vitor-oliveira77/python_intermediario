@@ -1,0 +1,1 @@
+lista = ['Dormir', 'acordar', 'almoçar']
